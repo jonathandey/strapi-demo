@@ -4,7 +4,8 @@
   "info": {
     "singularName": "episode",
     "pluralName": "episodes",
-    "displayName": "Episodes"
+    "displayName": "Episodes",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,8 +16,16 @@
       "type": "string"
     },
     "Content": {
-      "type": "text",
+      "type": "richtext",
       "required": true
+    },
+    "Slug": {
+      "type": "string"
+    },
+    "SEO": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.seo"
     }
   }
 }
